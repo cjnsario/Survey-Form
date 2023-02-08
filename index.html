@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Lorem Ipsum</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name-label">Name: 
+        <input id="name" name="name-label" type="text" placeholder="First Name, Middle Initial, Last Name" required>
+      </label>
+      <label id="email-label" for="email-label">Email: 
+        <input id="email" name="email-label" type="email" placeholder="sample@gmail.com" required>
+      </label>
+      <label id="number-label" for="number-label">Phone Number: 
+        <input id="number" name="number-label" type="number" maxlength="10" min="9000000001" max="9999999999" placeholder="9231234123" required>
+      </label>
+      <label for="dropdown">Gender: 
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+      
+      <label>Employment Status</label>
+      <label for="employed"><input id="employed" type="radio" name="employment-status" class="inline" value="Employed"/> Employed</label>
+      <label for="unemployed"><input id="unemployed" type="radio" name="employment-status" class="inline" value="Unemployed"/> Unemployed</label>
+
+      <label>Programming Languages:</label>
+      <input id="python" type="checkbox" name="programming-language" value="python" checked> <label for="python">Python</label>
+      <input id="Javascript" type="checkbox" name="programming-language" value="javascript"> <label for="javascript">Javascript</label>
+      <input id="C#" type="checkbox" name="programming-language" value="c#"> <label for="c#">C#</label>
+      
+      <label for="explanation">Tell what you like about the selected programming language(s):
+        <textarea id="explanation" name="explanation" rows="3" cols="30" placeholder="I like Python because..."></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
